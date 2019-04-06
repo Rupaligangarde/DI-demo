@@ -1,6 +1,5 @@
 package com.di.demo.controllers
 
-import com.di.demo.controllers.PropertyInjectedGreetingController
 import com.di.demo.services.GreetingServiceImpl
 import org.junit.Assert
 import org.junit.Test
