@@ -1,6 +1,7 @@
 package com.di.demo.controllers
 
-import com.di.demo.services.GreetingServiceImpl
+import com.di.demo.services.PropertyGreetingServiceImpl
+import com.di.demo.services.SetterGreetingServiceImpl
 import org.junit.Assert
 import org.junit.Test
 
@@ -9,10 +10,10 @@ class PropertyInjectedGreetingControllerTest {
     @Test
     fun shouldSayHello() {
         val controller = PropertyInjectedGreetingController()
-        controller.greetingServiceImpl = GreetingServiceImpl()
+        controller.greetingService = PropertyGreetingServiceImpl()
         val result = controller.sayHello()
         Assert.assertEquals(
-                "Hello",
+                "Hello - using property",
                 result
         )
     }
