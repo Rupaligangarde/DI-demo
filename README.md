@@ -6,3 +6,6 @@
 
 @Qualifier:
 when using more than implementation of the interface
+
+@Primary:
+When Qualifier not specified, bean with @Primary gets injected when multiple bean with same name are available
